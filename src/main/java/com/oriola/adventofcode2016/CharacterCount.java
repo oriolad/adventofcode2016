@@ -1,12 +1,12 @@
-package com.oriola.adventofcode2016.day4;
+package com.oriola.adventofcode2016;
 
 /**
  * Created by Oriola on 16-12-06.
  */
 public class CharacterCount implements Comparable<CharacterCount>{
 
-    Character character;
-    Integer count;
+    private Character character;
+    private Integer count;
 
     public CharacterCount(Character character){
         this.character = character;
@@ -17,6 +17,13 @@ public class CharacterCount implements Comparable<CharacterCount>{
         count++;
     }
 
+    public Character getCharacter(){
+        return character;
+    }
+
+    public Integer getCount(){
+        return count;
+    }
 
     @Override
     public boolean equals(Object o) {

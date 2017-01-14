@@ -1,7 +1,7 @@
 package com.oriola.adventofcode2016.day4;
 
+import com.oriola.adventofcode2016.CharacterCount;
 import com.oriola.adventofcode2016.FileUtil;
-import sun.misc.Sort;
 
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
@@ -56,7 +56,7 @@ public class Day4_Part1 {
                     CharacterCount currentCharCount = (CharacterCount) setIterator.next();
 //                    System.out.println("Current character: " + currentCharCount.character + " -> " + currentCharCount.count);
 
-                    if (currentCharCount.character.equals(c)) {
+                    if (currentCharCount.getCharacter().equals(c)) {
                         setContainsChar = true;
                         newCharCount = currentCharCount;
                     }
@@ -84,8 +84,8 @@ public class Day4_Part1 {
 
                 while(descendingIterator.hasNext() && checkSumCount < 5){
                     CharacterCount cc = (CharacterCount) descendingIterator.next();
-                    System.out.println(cc.character + " -> " + cc.count);
-                    checkSumBuilder.append(cc.character);
+                    System.out.println(cc.getCharacter() + " -> " + cc.getCount());
+                    checkSumBuilder.append(cc.getCharacter());
                     checkSumCount++;
                 }
 

@@ -1,7 +1,5 @@
 package com.oriola.adventofcode2016.day5;
 
-import com.oriola.adventofcode2016.day4.CharacterCount;
-
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
